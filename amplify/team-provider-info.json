@@ -1,0 +1,23 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-keetonetwebsite-dev-190832-authRole",
+            "UnauthRoleArn": "arn:aws:iam::019916614947:role/amplify-keetonetwebsite-dev-190832-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::019916614947:role/amplify-keetonetwebsite-dev-190832-authRole",
+            "Region": "ca-central-1",
+            "DeploymentBucketName": "amplify-keetonetwebsite-dev-190832-deployment",
+            "UnauthRoleName": "amplify-keetonetwebsite-dev-190832-unauthRole",
+            "StackName": "amplify-keetonetwebsite-dev-190832",
+            "StackId": "arn:aws:cloudformation:ca-central-1:019916614947:stack/amplify-keetonetwebsite-dev-190832/4c81f960-3e8d-11ec-a8f8-02ee69b6f8ea",
+            "AmplifyAppId": "dj4jtkpzcj48g"
+        },
+        "categories": {
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "dj4jtkpzcj48g",
+                    "type": "cicd"
+                }
+            }
+        }
+    }
+}
