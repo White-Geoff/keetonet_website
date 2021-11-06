@@ -81,7 +81,7 @@ nav {
   color: #FFFFFF;
   display: flex;
   align-items: center;
-  justify-content: left;
+  justify-content: center;
   width: 100%;
 }
 
