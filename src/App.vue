@@ -3,11 +3,11 @@
       <div id="navToggle" class="wideNavElement navElement navImageContainer">
         <img class="navImage" src="./assets/Menu_Toggle.svg" alt="Nav Toggle"></div>
       <div class="wideNavElement navElement navLinkContainer">
-        <router-link to="/">Home</router-link></div>
+        <router-link to="/views/">Home</router-link></div>
       <div class="wideNavElement navElement navLinkContainer">
-        <router-link to="/portfolio">Our Portfolio</router-link></div>
+        <router-link to="/views/portfolio">Our Portfolio</router-link></div>
       <div class="wideNavElement navElement navLinkContainer">
-        <router-link to="/rates_bundles">Rates & Bundles</router-link>
+        <router-link to="/views/rates_bundles">Rates & Bundles</router-link>
       </div>
       <div id="search" class="wideNavElement navElement navImageContainer">
         <img class="navImage" src="./assets/Search.svg" alt="Nav Toggle">
