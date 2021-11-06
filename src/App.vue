@@ -1,21 +1,52 @@
 <template>
-  <div id="nav">
-    <ul>
-      <nav class="toggle" v-if="active" v-on:click="OpenNav">&#10006;</nav>
-      <nav class="toggle" v-if="!active" v-on:click="OpenNav">&#9776;</nav>
-      <div v-if="active">
-        <li class="navlink"><router-link to="/">Home</router-link></li>
-        <li class="navlink"><router-link to="/about">About</router-link></li>
-        <li class="navlink"><router-link to="/portfolio">Portfolio</router-link></li>
-        <li class="navlink"><router-link to="/rates_bundles">Rates & Bundles</router-link></li>
+  <nav>
+      <div id="navToggle" class="wideNavElement navElement navImageContainer">
+        <img class="navImage" src="./assets/Menu_Toggle.svg" alt="Nav Toggle"></div>
+      <div class="wideNavElement navElement navLinkContainer">
+        <router-link to="/">Home</router-link></div>
+      <div class="wideNavElement navElement navLinkContainer">
+        <router-link to="/portfolio">Our Portfolio</router-link></div>
+      <div class="wideNavElement navElement navLinkContainer">
+        <router-link to="/rates_bundles">Rates & Bundles</router-link>
       </div>
-        <li class="navlink"><router-link to="/">Home</router-link></li>
-        <li class="navlink"><router-link to="/about">About</router-link></li>
-        <li class="navlink"><router-link to="/portfolio">Portfolio</router-link></li>
-        <li class="navlink"><router-link to="/rates_bundles">Rates & Bundles</router-link></li>
-    </ul>
-  </div>
-  <router-view />
+      <div id="search" class="wideNavElement navElement navImageContainer">
+        <img class="navImage" src="./assets/Search.svg" alt="Nav Toggle">
+      </div>
+  </nav>
+  <nav>
+    <div>
+
+    </div>
+  </nav>
+
+  <!-- <div id="nav">
+      <nav class="toggle" v-if="active" v-on:click="OpenNav">&#10006;</nav>
+      <nav id="toggleImage" class="toggle" v-if="!active" v-on:click="OpenNav"><img src="./assets/Menu_Toggle.svg" alt=""></nav>
+      <ul v-if="active">
+        <li class="navlink">
+          <router-link to="/">Home</router-link></li>
+        <li class="navlink">
+          <router-link to="/about">About</router-link></li>
+        <li class="navlink">
+          <router-link to="/portfolio">Our Portfolio</router-link></li>
+        <li class="navlink">
+          <router-link to="/rates_bundles">Rates & Bundles</router-link></li>
+      </ul>
+      <div id="wideNav">
+        <div class="navlink">
+          <router-link to="/">Home</router-link></div>
+        <div class="navlink">
+          <router-link to="/about">About</router-link></div>
+        <div class="navlink">
+          <router-link to="/portfolio">Portfolio</router-link></div>
+        <div class="navlink">
+          <router-link to="/rates_bundles">Rates & Bundles</router-link></div>
+      </div>
+  </div> -->
+  <router-view></router-view>
+  <footer>
+    <p>This is a footer</p>
+  </footer>
 </template>
 
 <script>
@@ -41,36 +72,48 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  background-color: #CCCCFF;
+   color: #FFFFFF;
 }
 
-.toggle {
-  width: 30px;
-  height: 15px;
-  padding-right: 10px;
+nav {
+  background: #3A1FA5;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 100%;
 }
 
-#nav {
-  padding: 30px;
+.navElement {
+  line-height: 1.2rem;
+  padding: .25rem;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+.wideNavElement {
+  
 }
 
-#nav li {
-  color: purple;
-  width: 33%;
+.navLinkContainer {
+  max-width: 20%;
+  min-width: 18%;
+  text-overflow: wrap;
 }
 
-#nav ul {
-  max-width: 45%;
-  min-width: 35%;
-  justify-content: space-around;
-  display: inline-flex;
+.navImageContainer {
+  height: 120%;
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+#navToggle {
+  padding-left: 5%;
 }
+
+#search {
+  padding-right: 5%;
+}
+
 </style>
