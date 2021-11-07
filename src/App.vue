@@ -69,6 +69,8 @@
     </ul>
     <img id="copyright" class="footerli" src="./assets/c_keetonet_2021.png" alt="Copyright KEETONET 2021">
   </footer>
+  <div id="goldBarFooter"></div>
+  <div id="blackBarFooter"></div>
 </template>
 
 <script>
@@ -176,8 +178,13 @@ nav {
 
 #blackBar {
   width: 100%;
-  height: .4rem;
+  height: .5rem;
   background: #000;
+}
+
+footer {
+  background: #3A1FA5;
+  color: #FFFFFF;
 }
 
 .footerli {
@@ -192,5 +199,19 @@ nav {
 #copyright {
   width: 25%;
   height: auto;
+  padding-bottom: .5rem;
+}
+
+#goldBarFooter {
+  width: 100%;
+  height: 1rem;
+  background: #FEF97F;
+  display: block;
+}
+
+#blackBarFooter {
+  width: 100%;
+  height: 1rem;
+  background: #000;
 }
 </style>
