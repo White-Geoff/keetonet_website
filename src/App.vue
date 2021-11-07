@@ -129,8 +129,8 @@
 #taglineImg {
   width: 80%;
   max-width: 60rem;
+  margin-top: 25%;
   height: auto;
-  margin-top: -2.5%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -215,5 +215,66 @@ nav {
   min-width: 10rem;
   height: auto;
   padding-bottom: .5rem;
+}
+
+/* Responsive media */
+@media screen and (max-width: 425px) {
+  #taglineImg {
+  margin-top: -2.5%;
+}
+}
+
+@media screen and (min-width: 425px) {
+  #taglineImg {
+  margin-top: -2.75%;
+}
+}
+
+@media screen and (min-width: 600px) {
+  #taglineImg {
+  margin-top: -3.5%;
+}
+}
+
+@media screen and (min-width: 1000px) {
+  #taglineImg {
+  margin-top: -3%;
+}
+}
+
+@media screen and (min-width: 1250px) {
+  #taglineImg {
+  margin-top: -2.5%;
+}
+}
+
+@media screen and (min-width: 1500px) {
+  #taglineImg {
+  margin-top: -2.25%;
+}
+}
+
+@media screen and (min-width: 1750px) {
+  #taglineImg {
+  margin-top: -2%;
+}
+}
+
+@media screen and (min-width: 2000px) {
+  #taglineImg {
+  margin-top: -1.5%;
+}
+}
+
+@media screen and (min-width: 2500px) {
+  #taglineImg {
+  margin-top: -1%;
+}
+}
+
+@media screen and (min-width: 4250px) {
+  #taglineImg {
+  margin-top: -0.5%;
+}
 }
 </style>
