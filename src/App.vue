@@ -14,11 +14,11 @@
         <div id="internalNav">
           <div id="navToggle" class="wideNavElement navElement navImageContainer">
           <img class="navImage" src="./assets/Menu_Toggle.svg" alt="Nav Toggle"></div>
-          <div class="wideNavElement navElement navLinkContainer">
+          <div class="wideNavElement navElement navLinkContainer ">
             <router-link to="/">Home</router-link></div>
-          <div class="wideNavElement navElement navLinkContainer">
+          <div class="wideNavElement navElement navLinkContainer ">
             <router-link to="/portfolio">Our Portfolio</router-link></div>
-          <div class="wideNavElement navElement navLinkContainer">
+          <div class="wideNavElement navElement navLinkContainer ">
             <router-link to="/rates_bundles">Rates & Bundles</router-link>
           </div>
           <div id="search" class="wideNavElement navElement navImageContainer">
@@ -144,6 +144,7 @@ nav {
   background: #3A1FA5;
   color: #FFFFFF;
   width: 100%;
+  height: auto;
 }
 
 #internalNav {
@@ -151,25 +152,27 @@ nav {
   align-items: center;
   justify-content: space-around;
   min-width: 50%;
-  max-width: 200rem;
+  max-width: 500px;
+  height: auto;
+  padding: 0% 1%;
 }
 
-.navElement {
+.wideNavElement {
   line-height: 1.2rem;
-  padding: .25rem;
   display: flex;
   flex-grow: 1;
-  font-family: Abel;
+  font-family: Abel;  
 }
 
 .navLinkContainer {
-  max-width: 5rem;
+  max-width: 7rem;
   text-overflow: wrap;
 }
 
 .navImageContainer {
   min-height: 2.75rem;
-  max-width: 5rem;
+  max-width: 7rem;
+  padding: 0.5rem 1rem;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -224,11 +227,17 @@ nav {
   #taglineImg {
   margin-top: -2.5%;
 }
+ .wideNavElement {
+  padding: 0% .5rem;
+}
 }
 
 @media screen and (min-width: 425px) {
   #taglineImg {
   margin-top: -2.75%;
+}
+.wideNavElement { 
+  padding: 0% .75rem;
 }
 }
 
@@ -236,11 +245,31 @@ nav {
   #taglineImg {
   margin-top: -3.5%;
 }
+.wideNavElement {
+  padding: 0% 1rem;
+  font-size: 1.5rem;
 }
+}
+
+@media screen and (min-width: 750px) {
+.wideNavElement{
+  padding: 0% 1.25rem;
+  font-size: 1.5rem;
+}
+}
+
 
 @media screen and (min-width: 1000px) {
   #taglineImg {
   margin-top: -3%;
+}
+.wideNavElement{
+  padding: 0% 1.5rem;
+  font-size: 1.5rem;
+}
+#internalNav {
+  min-width: 40%;
+  max-width: 750px;
 }
 }
 
@@ -248,11 +277,23 @@ nav {
   #taglineImg {
   margin-top: -2.5%;
 }
+.wideNavElement{
+  padding: 0% 1.75rem;
+  font-size: 1.5rem;
+}
 }
 
 @media screen and (min-width: 1500px) {
   #taglineImg {
   margin-top: -2.25%;
+}
+.wideNavElement{
+  padding: 0% 2rem;
+  font-size: 1.5rem;
+}
+#internalNav {
+  min-width: 30%;
+  max-width: 1000px;
 }
 }
 
