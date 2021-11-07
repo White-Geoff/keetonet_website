@@ -3,20 +3,26 @@
     <img id="logoImg" src="./assets/Gold_Black_1.png" alt="Logo">
     <img id="taglineImg" src="./assets/Gold_Shine_Text.png" alt="The tools of tomorrow, in your hands: Today.">
     </div>
-  <nav>
-      <div id="navToggle" class="wideNavElement navElement navImageContainer">
+  <div>
+    <div>
+      <nav>
+        <div id="navToggle" class="wideNavElement navElement navImageContainer">
         <img class="navImage" src="./assets/Menu_Toggle.svg" alt="Nav Toggle"></div>
-      <div class="wideNavElement navElement navLinkContainer">
-        <router-link to="/">Home</router-link></div>
-      <div class="wideNavElement navElement navLinkContainer">
-        <router-link to="/portfolio">Our Portfolio</router-link></div>
-      <div class="wideNavElement navElement navLinkContainer">
-        <router-link to="/rates_bundles">Rates & Bundles</router-link>
+        <div class="wideNavElement navElement navLinkContainer">
+          <router-link to="/">Home</router-link></div>
+        <div class="wideNavElement navElement navLinkContainer">
+          <router-link to="/portfolio">Our Portfolio</router-link></div>
+        <div class="wideNavElement navElement navLinkContainer">
+          <router-link to="/rates_bundles">Rates & Bundles</router-link>
+        </div>
+        <div id="search" class="wideNavElement navElement navImageContainer">
+          <img class="navImage" src="./assets/Search.svg" alt="Nav Toggle">
+          </div>
+      </nav>
+      <div id="goldBar"></div>
+      <div id="blackBar"></div>
       </div>
-      <div id="search" class="wideNavElement navElement navImageContainer">
-        <img class="navImage" src="./assets/Search.svg" alt="Nav Toggle">
-      </div>
-  </nav>
+    </div>    
   <nav>
     <div>
 
@@ -87,14 +93,16 @@
 }
 
 #logoImg {
-  width: 50%;
-  padding-left: 25%;
+  width: auto;
+  height: 5rem;
+  padding-left: 35%;
   margin-top: 3rem;
 }
 
 #taglineImg {
-  width: 75%;
-  padding-left: 12.5%;
+  width: auto;
+  height: 1.5rem;
+  padding-left: 5%;
 }
 
 nav {
@@ -137,4 +145,16 @@ nav {
   padding-right: 5%;
 }
 
+#goldBar {
+  width: 100%;
+  height: 1rem;
+  background: #FEF97F;
+  display: block;
+}
+
+#blackBar {
+  width: 100%;
+  height: .5rem;
+  background: #000;
+}
 </style>
