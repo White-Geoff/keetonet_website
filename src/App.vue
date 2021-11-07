@@ -11,18 +11,20 @@
   <div>
     <div>
       <nav>
-        <div id="navToggle" class="wideNavElement navElement navImageContainer">
-        <img class="navImage" src="./assets/Menu_Toggle.svg" alt="Nav Toggle"></div>
-        <div class="wideNavElement navElement navLinkContainer">
-          <router-link to="/">Home</router-link></div>
-        <div class="wideNavElement navElement navLinkContainer">
-          <router-link to="/portfolio">Our Portfolio</router-link></div>
-        <div class="wideNavElement navElement navLinkContainer">
-          <router-link to="/rates_bundles">Rates & Bundles</router-link>
-        </div>
-        <div id="search" class="wideNavElement navElement navImageContainer">
-          <img class="navImage" src="./assets/Search.svg" alt="Nav Toggle">
+        <div id="internalNav">
+          <div id="navToggle" class="wideNavElement navElement navImageContainer">
+          <img class="navImage" src="./assets/Menu_Toggle.svg" alt="Nav Toggle"></div>
+          <div class="wideNavElement navElement navLinkContainer">
+            <router-link to="/">Home</router-link></div>
+          <div class="wideNavElement navElement navLinkContainer">
+            <router-link to="/portfolio">Our Portfolio</router-link></div>
+          <div class="wideNavElement navElement navLinkContainer">
+            <router-link to="/rates_bundles">Rates & Bundles</router-link>
           </div>
+          <div id="search" class="wideNavElement navElement navImageContainer">
+            <img class="navImage" src="./assets/Search.svg" alt="Nav Toggle">
+            </div>
+        </div>
       </nav>
       <div class="goldBar h-2"></div>
       <div class="blackBar h-2"></div>
@@ -135,31 +137,44 @@
 
 /* Nav */
 nav {
-  background: #3A1FA5;
-  color: #FFFFFF;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: #3A1FA5;
+  color: #FFFFFF;
   width: 100%;
+}
+
+#internalNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-width: 50%;
+  max-width: 200rem;
 }
 
 .navElement {
   line-height: 1.2rem;
   padding: .25rem;
+  display: flex;
+  flex-grow: 1;
 }
 
 .navLinkContainer {
-  max-width: 20%;
-  min-width: 18%;
+  max-width: 5rem;
   text-overflow: wrap;
 }
 
 .navImageContainer {
-  height: 120%;
-  width: 15%;
+  min-height: 2.75rem;
+  max-width: 5rem;
   display: flex;
   justify-content: center;
   align-content: center;
+}
+
+.navImage {
+  min-width: 3rem;
 }
 
 #navToggle {
