@@ -58,19 +58,21 @@
       </div>
   </div> -->
   <router-view></router-view>
-  <footer>
-    <ul>
-      <li class="x2 footerli">You may reach us at:</li>
-      <li class="footerli">general@keetonet.ca</li>
-      <li class="footerli">
-        <router-link to="/">Terms of Service</router-link></li>
-      <li class="footerli">
-        <router-link to="/">Privacy policy</router-link></li>
-    </ul>
-    <img id="copyright" class="footerli" src="./assets/c_keetonet_2021.png" alt="Copyright KEETONET 2021">
-  </footer>
-  <div id="goldBarFooter"></div>
-  <div id="blackBarFooter"></div>
+  <div id="footerContainer">
+    <footer>
+      <ul>
+        <li class="x2 footerli">You may reach us at:</li>
+        <li class="footerli">general@keetonet.ca</li>
+        <li class="footerli">
+          <router-link to="/">Terms of Service</router-link></li>
+        <li class="footerli">
+          <router-link to="/">Privacy policy</router-link></li>
+      </ul>
+      <img id="copyright" class="footerli" src="./assets/c_keetonet_2021.png" alt="Copyright KEETONET 2021">
+    </footer>
+    <div id="goldBarFooter"></div>
+    <div id="blackBarFooter"></div>
+  </div>
 </template>
 
 <script>
@@ -185,9 +187,10 @@ nav {
 }
 
 /* Footer */
-footer {
+#footerContainer {
   background: #3A1FA5;
   color: #FFFFFF;
+  margin: 0%;
 }
 
 .footerli {
@@ -212,6 +215,7 @@ footer {
   height: 1rem;
   background: #FEF97F;
   display: block;
+  margin: 0%;
 }
 
 #blackBarFooter {

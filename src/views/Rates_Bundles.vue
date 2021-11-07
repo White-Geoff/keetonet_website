@@ -4,4 +4,4 @@
   </div>
 </template>
 
-<style scoped src="../index.css"></style>
+//<style scoped src="../index.css"></style>
