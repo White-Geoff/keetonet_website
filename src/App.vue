@@ -107,7 +107,7 @@
   max-width: 30rem;
   height: auto;
   margin-top: 3rem;
-  margin-left: 30%;
+  margin-left: auto;
   margin-right: auto;
   display: block;
 }
@@ -117,7 +117,7 @@
   max-width: 60rem;
   height: auto;
   margin-top: -2.5%;
-  margin-left: 10%;
+  margin-left: auto;
   margin-right: auto;
 }
 
