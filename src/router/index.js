@@ -28,6 +28,17 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/Rates_Bundles.vue"),
   },
+    // Footer
+   {
+    path: "/",
+    name: "Terms of Service",
+    component: Home,
+  },
+   {
+    path: "/",
+    name: "Privacy Policy",
+    component: Home,
+  },
 ];
 
 const router = createRouter({

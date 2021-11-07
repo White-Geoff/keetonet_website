@@ -62,8 +62,10 @@
     <ul>
       <li class="x2 footerli">You may reach us at:</li>
       <li class="footerli">general@keetonet.ca</li>
-      <li class="footerli">Terms of Service</li>
-      <li class="footerli">Privacy policy</li>
+      <li class="footerli">
+        <router-link to="/">Terms of Service</router-link></li>
+      <li class="footerli">
+        <router-link to="/">Privacy policy</router-link></li>
     </ul>
     <img id="copyright" class="footerli" src="./assets/c_keetonet_2021.png" alt="Copyright KEETONET 2021">
   </footer>
