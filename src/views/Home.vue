@@ -1,6 +1,6 @@
 <template>
-  <div class="home">
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div class="home body h-96">
+    <h1 class="h-8 font-bold">Content goes here</h1>
   </div>
 </template>
 
@@ -15,3 +15,5 @@
 //   },
 // };
 // </script>
+
+<style scoped src="../index.css"></style>

@@ -88,9 +88,8 @@
   }
 </script>
 
-<style>
-
-
+ <style>
+  /* Main */
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -100,6 +99,7 @@
    color: #FFFFFF;
 }
 
+/* Logo */
 #logo {
   text-align: center;
   width: 100%;
@@ -133,6 +133,7 @@
   display: flex;
 }
 
+/* Nav */
 nav {
   background: #3A1FA5;
   color: #FFFFFF;
@@ -169,6 +170,7 @@ nav {
   padding-right: 5%;
 }
 
+/* Decorative Nav bars */
 #goldBar {
   width: 100%;
   height: .5rem;
@@ -182,6 +184,7 @@ nav {
   background: #000;
 }
 
+/* Footer */
 footer {
   background: #3A1FA5;
   color: #FFFFFF;
