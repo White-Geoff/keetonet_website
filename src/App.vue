@@ -59,9 +59,13 @@
   </div> -->
   <router-view></router-view>
   <footer>
-    <p>
-      
-    </p>
+    <ul>
+      <li class="x2 footerli">You may reach us at:</li>
+      <li class="footerli">general@keetonet.ca</li>
+      <li class="footerli">Terms of Service</li>
+      <li class="footerli">Privacy policy</li>
+    </ul>
+    <img id="copyright" class="footerli" src="./assets/c_keetonet_2021.png" alt="Copyright KEETONET 2021">
   </footer>
 </template>
 
@@ -139,10 +143,6 @@ nav {
   padding: .25rem;
 }
 
-.wideNavElement {
-  
-}
-
 .navLinkContainer {
   max-width: 20%;
   min-width: 18%;
@@ -176,5 +176,19 @@ nav {
   width: 100%;
   height: .4rem;
   background: #000;
+}
+
+.footerli {
+  margin: .25rem auto;
+  padding: auto;
+}
+
+.x2 {
+  font-size: 2rem;
+}
+
+#copyright {
+  width: 25%;
+  height: auto;
 }
 </style>
