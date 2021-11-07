@@ -1,8 +1,12 @@
 <template>
-  <div id="logo">
+  <div class="flex">
+    <div></div>
+    <div id="logo">
     <img id="logoImg" src="./assets/Gold_Black_1.png" alt="Logo">
     <img id="taglineImg" src="./assets/Gold_Shine_Text.png" alt="The tools of tomorrow, in your hands: Today.">
     </div>
+    <div></div>
+  </div>
   <div>
     <div>
       <nav>
@@ -89,20 +93,25 @@
 #logo {
   text-align: center;
   width: 100%;
-  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 #logoImg {
   width: auto;
-  height: 5rem;
-  padding-left: 35%;
+  height: 10rem;
   margin-top: 3rem;
 }
 
 #taglineImg {
-  width: auto;
-  height: 1.5rem;
-  padding-left: 5%;
+  min-width: 25rem;
+  height: auto;
+  margin-top: -.75rem;
+}
+
+.flex {
+  display: flex;
 }
 
 nav {
@@ -147,14 +156,14 @@ nav {
 
 #goldBar {
   width: 100%;
-  height: 1rem;
+  height: .5rem;
   background: #FEF97F;
   display: block;
 }
 
 #blackBar {
   width: 100%;
-  height: .5rem;
+  height: .4rem;
   background: #000;
 }
 </style>
