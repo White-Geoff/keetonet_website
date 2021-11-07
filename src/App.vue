@@ -1,4 +1,8 @@
 <template>
+  <div id="logo">
+    <img id="logoImg" src="./assets/Gold_Black_1.svg" alt="Logo">
+    <img id="taglineImg" src="./assets/Gold_Shine_Text.svg" alt="The tools of tomorrow, in your hands: Today.">
+    </div>
   <nav>
       <div id="navToggle" class="wideNavElement navElement navImageContainer">
         <img class="navImage" src="./assets/Menu_Toggle.svg" alt="Nav Toggle"></div>
@@ -74,6 +78,19 @@
   text-align: center;
   background-color: #CCCCFF;
    color: #FFFFFF;
+}
+
+#logo {
+  text-align: center;
+  width: 100%;
+}
+
+#logoImg {
+  width: 50%;
+}
+
+#taglineImg {
+  width: 75%;
 }
 
 nav {
