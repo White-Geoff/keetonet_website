@@ -105,6 +105,7 @@
    color: #FFFFFF;
 }
 
+
 /* Logo */
 #logo {
   text-align: center;
@@ -158,6 +159,7 @@ nav {
   padding: .25rem;
   display: flex;
   flex-grow: 1;
+  font-family: Abel;
 }
 
 .navLinkContainer {
