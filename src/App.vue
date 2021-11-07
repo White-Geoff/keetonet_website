@@ -198,6 +198,8 @@ footer {
 
 #copyright {
   width: 25%;
+  max-width: 20rem;
+  min-width: 10rem;
   height: auto;
   padding-bottom: .5rem;
 }
