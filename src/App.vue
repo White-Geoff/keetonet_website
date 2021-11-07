@@ -59,7 +59,9 @@
   </div> -->
   <router-view></router-view>
   <footer>
-    <p>This is a footer</p>
+    <p>
+      
+    </p>
   </footer>
 </template>
 
