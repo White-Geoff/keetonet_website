@@ -2,8 +2,9 @@
   <div class="flex">
     <div></div>
     <div id="logo">
-    <img id="logoImg" src="./assets/Gold_Black_1.png" alt="Logo">
-    <img id="taglineImg" src="./assets/Gold_Shine_Text.png" alt="The tools of tomorrow, in your hands: Today.">
+    <img id="logoImg" src="./assets/Gold_Black_1.png" alt="Logo"/>
+    <img id="taglineImg" src="./assets/Gold_Shine_Text.png"
+     alt="The tools of tomorrow, in your hands: Today.">
     </div>
     <div></div>
   </div>
@@ -23,8 +24,8 @@
           <img class="navImage" src="./assets/Search.svg" alt="Nav Toggle">
           </div>
       </nav>
-      <div id="goldBar"></div>
-      <div id="blackBar"></div>
+      <div class="goldBar h-2"></div>
+      <div class="blackBar h-2"></div>
       </div>
     </div>    
   <nav>
@@ -61,17 +62,18 @@
   <div id="footerContainer">
     <footer>
       <ul>
-        <li class="x2 footerli">You may reach us at:</li>
+        <li class="text-3xl footerli">You may reach us at:</li>
         <li class="footerli">general@keetonet.ca</li>
         <li class="footerli">
           <router-link to="/">Terms of Service</router-link></li>
         <li class="footerli">
           <router-link to="/">Privacy policy</router-link></li>
       </ul>
-      <img id="copyright" class="footerli" src="./assets/c_keetonet_2021.png" alt="Copyright KEETONET 2021">
+      <img id="copyright" class="footerli" src="./assets/c_keetonet_2021.png"
+       alt="Copyright KEETONET 2021">
     </footer>
-    <div id="goldBarFooter"></div>
-    <div id="blackBarFooter"></div>
+    <div class="goldBar h-4"></div>
+    <div class="blackBar h-4"></div>
   </div>
 </template>
 
@@ -131,10 +133,6 @@
   margin-right: auto;
 }
 
-.flex {
-  display: flex;
-}
-
 /* Nav */
 nav {
   background: #3A1FA5;
@@ -173,16 +171,14 @@ nav {
 }
 
 /* Decorative Nav bars */
-#goldBar {
+.goldBar {
   width: 100%;
-  height: .5rem;
   background: #FEF97F;
   display: block;
 }
 
-#blackBar {
+.blackBar {
   width: 100%;
-  height: .5rem;
   background: #000;
 }
 
@@ -198,29 +194,11 @@ nav {
   padding: auto;
 }
 
-.x2 {
-  font-size: 2rem;
-}
-
 #copyright {
   width: 25%;
   max-width: 20rem;
   min-width: 10rem;
   height: auto;
   padding-bottom: .5rem;
-}
-
-#goldBarFooter {
-  width: 100%;
-  height: 1rem;
-  background: #FEF97F;
-  display: block;
-  margin: 0%;
-}
-
-#blackBarFooter {
-  width: 100%;
-  height: 1rem;
-  background: #000;
 }
 </style>
