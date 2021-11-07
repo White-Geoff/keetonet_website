@@ -1,5 +1,6 @@
 <template>
   <div class="rates_bundles body h-96">
+    <div class="h-2/4"></div>
     <h1 class="h-8 font-bold">Content goes here</h1>
   </div>
 </template>
