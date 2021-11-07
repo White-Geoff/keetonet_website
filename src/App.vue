@@ -93,21 +93,30 @@
 #logo {
   text-align: center;
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: block;
+}
+
+#logo img {
+  display: block;
 }
 
 #logoImg {
-  width: auto;
-  height: 10rem;
+  width: 40%;
+  max-width: 30rem;
+  height: auto;
   margin-top: 3rem;
+  margin-left: 30%;
+  margin-right: auto;
+  display: block;
 }
 
 #taglineImg {
-  min-width: 25rem;
+  width: 80%;
+  max-width: 60rem;
   height: auto;
-  margin-top: -.75rem;
+  margin-top: -2.5%;
+  margin-left: 10%;
+  margin-right: auto;
 }
 
 .flex {
