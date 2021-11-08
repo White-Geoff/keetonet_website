@@ -9,7 +9,7 @@
     <div></div>
   </div>
   <div>
-    <div>
+    <div class="navBackground">
       <nav>
         <div id="internalNav">
           <div id="navToggle" class="wideNavElement navElement navImageContainer">
@@ -21,18 +21,27 @@
           <div class="wideNavElement navElement navLinkContainer ">
             <router-link to="/rates_bundles">Rates & Bundles</router-link>
           </div>
-          <div id="search" class="wideNavElement navElement navImageContainer">
+          <div  v-on:click=ToggleSearch id="search" class="wideNavElement navElement navImageContainer">
             <img class="navImage" src="./assets/Search.svg" alt="Nav Toggle">
             </div>
         </div>
       </nav>
+      <div v-if="searchActive" class="flex justify-center">
+        <div class="searchContainer rounded-full flex ">
+          <div  v-on:click=ToggleSearch class="closeButton text-4xl font-bold">X</div>
+          <div class="interiorSearchContainer flex">
+            <img class="searchIcon px-1" src="./assets/Search.svg" alt="Search Icon">
+            <input type="search" name="searchBar" id="search" placeholder="Coming Soon" 
+            class="searchBar rounded-lg">
+          </div>
+        </div>
+      </div>
       <div class="goldBar h-2"></div>
       <div class="blackBar h-2"></div>
       </div>
     </div>    
   <nav>
     <div>
-
     </div>
   </nav>
 
@@ -83,12 +92,12 @@
   export default {
     data () {
       return {
-        active: false
+        searchActive: false
       }
     },
     methods: {
-      OpenNav () {
-        this.active = !this.active
+      ToggleSearch () {
+        this.searchActive = !this.searchActive
       }
     }
   }
@@ -137,12 +146,14 @@
 }
 
 /* Nav */
+.navBackground {
+  background: #3A1FA5;
+  color: #FFFFFF;
+}
 nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #3A1FA5;
-  color: #FFFFFF;
   width: 100%;
   height: auto;
 }
@@ -189,7 +200,30 @@ nav {
 #search {
   padding-right: 5%;
 }
-
+/* Full Search bar */
+.closeButton {
+  width: 15%;
+  color: #3A1FA5;
+}
+.searchContainer {
+  background-color: #CCCCFF;
+  width: 95%;
+  max-width: 350px;
+  padding: .25rem .75rem;
+  margin: .5rem;
+}
+.interiorSearchContainer {
+  padding: 10% auto auto 10%;
+  width: 65%
+}
+.searchIcon {
+  min-width: 3rem;
+}
+.searchBar {
+  padding-left: .25rem;
+  margin-left: .5rem;
+  background: #2C8282;
+}
 /* Decorative Nav bars */
 .goldBar {
   width: 100%;
