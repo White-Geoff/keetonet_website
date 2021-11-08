@@ -196,10 +196,6 @@ nav {
 #navToggle {
   padding-left: 5%;
 }
-
-#search {
-  padding-right: 5%;
-}
 /* Full Search bar */
 .closeButton {
   width: 15%;
@@ -213,8 +209,7 @@ nav {
   margin: .5rem;
 }
 .interiorSearchContainer {
-  padding: 10% auto auto 10%;
-  width: 65%
+  padding: 5% auto auto 5%;
 }
 .searchIcon {
   min-width: 3rem;
@@ -222,7 +217,8 @@ nav {
 .searchBar {
   padding-left: .25rem;
   margin-left: .5rem;
-  background: #2C8282;
+  background: #2C8282;  
+  width: 90%;
 }
 /* Decorative Nav bars */
 .goldBar {
