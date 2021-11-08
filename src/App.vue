@@ -151,7 +151,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  min-width: 50%;
+  width: 50%;
   max-width: 500px;
   height: auto;
   padding: 0% 1%;
@@ -161,17 +161,17 @@ nav {
   line-height: 1.2rem;
   display: flex;
   flex-grow: 1;
-  font-family: Abel;  
+  font-family: Abel; 
+  max-width: 10rem; 
+  min-width: 10rem;
 }
 
-.navLinkContainer {
-  max-width: 7rem;
+.navLinkContainer {  
   text-overflow: wrap;
 }
 
 .navImageContainer {
   min-height: 2.75rem;
-  max-width: 7rem;
   padding: 0.5rem 1rem;
   display: flex;
   justify-content: center;
@@ -229,6 +229,8 @@ nav {
 }
  .wideNavElement {
   padding: 0% .5rem;
+  font-size: 0.75rem;
+  min-width: 3.5rem;
 }
 }
 
@@ -238,6 +240,8 @@ nav {
 }
 .wideNavElement { 
   padding: 0% .75rem;
+  font-size: 0.85rem;
+  min-width: 4.5rem;
 }
 }
 
@@ -247,14 +251,16 @@ nav {
 }
 .wideNavElement {
   padding: 0% 1rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  min-width: 6rem;
 }
 }
 
 @media screen and (min-width: 750px) {
 .wideNavElement{
   padding: 0% 1.25rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  min-width: 7rem;
 }
 }
 
@@ -266,9 +272,10 @@ nav {
 .wideNavElement{
   padding: 0% 1.5rem;
   font-size: 1.5rem;
+  min-width: 8rem;
 }
 #internalNav {
-  min-width: 40%;
+  width: 40%;
   max-width: 750px;
 }
 }
@@ -280,6 +287,7 @@ nav {
 .wideNavElement{
   padding: 0% 1.75rem;
   font-size: 1.5rem;
+  min-width: 9rem;
 }
 }
 
@@ -292,7 +300,7 @@ nav {
   font-size: 1.5rem;
 }
 #internalNav {
-  min-width: 30%;
+  width: 30%;
   max-width: 1000px;
 }
 }
