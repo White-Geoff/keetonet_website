@@ -70,7 +70,7 @@
       </nav>
       <!-- End full nav -->
       <!-- Start full search bar -->
-      <div v-if="searchActive" class="flex justify-center">
+      <div v-if="searchActive && !fullNavActive" class="flex justify-center">
         <div class="searchContainer rounded-full flex ">
           <div  v-on:click=ToggleSearch class="closeButton text-2xl font-bold">X</div>
           <div class="interiorSearchContainer flex">
