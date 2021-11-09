@@ -123,7 +123,7 @@
         <li class="footerli">
           <router-link :to="{ name: 'Privacy Policy'}">Privacy policy</router-link></li>
       </ul>
-      <img id="copyright" class="footerli" src="./assets/c_keetonet_2021.png"
+      <img id="copyright" class="footerli" src="./assets/c_keetonet.png"
        alt="Copyright KEETONET 2021">
     </footer>
     <div class="goldBar h-4"></div>
