@@ -124,7 +124,7 @@
           <router-link :to="{ name: 'Privacy Policy'}">Privacy policy</router-link></li>
       </ul>
       <img id="copyright" class="footerli" src="./assets/c_keetonet.png"
-       alt="Copyright KEETONET 2021">
+       alt="Copyright KEETONET 2021-2022">
     </footer>
     <div class="goldBar h-4"></div>
     <div class="blackBar h-4"></div>
