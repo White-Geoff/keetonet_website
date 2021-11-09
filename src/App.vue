@@ -24,7 +24,7 @@
           <div class="wideNavElement navElement navLinkContainer ">
             <router-link :to="{ name: 'Rates & Bundles'}">Rates & Bundles</router-link>
           </div>
-          <div  v-on:click=ToggleSearch id="search" class="wideNavElement navElement navImageContainer">
+          <div   v-on:click=ToggleSearch id="search" class="wideNavElement navElement navImageContainer">
             <img class="navImage" src="./assets/Search.svg" alt="Search Icon">
             </div>
         </div>
@@ -124,7 +124,7 @@
           <router-link :to="{ name: 'Privacy Policy'}">Privacy policy</router-link></li>
       </ul>
       <img id="copyright" class="footerli" src="./assets/c_keetonet.png"
-       alt="Copyright KEETONET 2021">
+       alt="Copyright KEETONET 2021-2022">
     </footer>
     <div class="goldBar h-4"></div>
     <div class="blackBar h-4"></div>
@@ -141,10 +141,17 @@
     },
     methods: {
       ToggleSearch () {
-        this.searchActive = !this.searchActive
+        if (this.fullNavActive) {
+          return
+        }
+        else {
+          this.searchActive = !this.searchActive
+        }
+        
       },
       ToggleNav () {
-        this.fullNavActive = !this.fullNavActive
+        this.fullNavActive = !this.fullNavActive;
+        this.searchActive = false;
       }
     }
   }
