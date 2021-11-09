@@ -13,7 +13,7 @@
   <div>
     <div class="navBackground">
       <!-- Initial wide nav -->
-      <nav>
+      <nav v-if="!fullNavActive">
         <div id="internalNav">
           <div  v-on:click=ToggleNav id="navToggle" class="wideNavElement navElement navImageContainer">
           <img class="navImage" src="./assets/Menu_Toggle.svg" alt="Nav Toggle"></div>
