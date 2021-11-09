@@ -8,15 +8,6 @@ const routes = [
     component: Home,
   },
   {
-    path: "/about",
-    name: "About",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue"),
-  },
-  {
     path: "/portfolio",
     name: "Portfolio",
     component: () =>
@@ -24,20 +15,53 @@ const routes = [
   },
    {
     path: "/rates_bundles",
-    name: "Rates_Bundles",
+    name: "Rates & Bundles",
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/Rates_Bundles.vue"),
   },
     // Footer
    {
-    path: "/",
+    path: "/terms_conditions",
     name: "Terms of Service",
-    component: Home,
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/Terms_Conditions.vue"),
   },
    {
-    path: "/",
-    name: "Privacy Policy",
-    component: Home,
+    path: "/privacy_policy",
+     name: "Privacy Policy",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/Privacy_Policy.vue"),
+  },
+   //Rest of nav links
+   {
+    path: "/hosted_solutions",
+    name: "Hosted Solutions",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/Hosted_Solutions.vue"),
+  },
+   {
+    path: "/graphics_design",
+    name: "Graphics & Design",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/Graphics_Design.vue"),
+  },
+    {
+    path: "/advertising",
+    name: "Advertising",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/Advertising.vue"),
+  },
+    {
+    path: "/applications",
+    name: "Applications",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/Applications.vue"),
+  },
+    {
+    path: "/custom_software",
+    name: "Custom Software",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/Custom_Software.vue"),
   },
 ];
 

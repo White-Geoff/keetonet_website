@@ -1,4 +1,5 @@
 <template>
+<!-- logo and tagline -->
   <div class="flex">
     <div></div>
     <div id="logo">
@@ -8,27 +9,70 @@
     </div>
     <div></div>
   </div>
+  <!-- Navs -->
   <div>
     <div class="navBackground">
+      <!-- Initial wide nav -->
       <nav>
         <div id="internalNav">
-          <div id="navToggle" class="wideNavElement navElement navImageContainer">
+          <div  v-on:click=ToggleNav id="navToggle" class="wideNavElement navElement navImageContainer">
           <img class="navImage" src="./assets/Menu_Toggle.svg" alt="Nav Toggle"></div>
           <div class="wideNavElement navElement navLinkContainer ">
-            <router-link to="/">Home</router-link></div>
+            <router-link :to="{ name: 'Home'}">Home</router-link></div>
           <div class="wideNavElement navElement navLinkContainer ">
-            <router-link to="/portfolio">Our Portfolio</router-link></div>
+            <router-link :to="{ name: 'Portfolio'}">Our Portfolio</router-link></div>
           <div class="wideNavElement navElement navLinkContainer ">
-            <router-link to="/rates_bundles">Rates & Bundles</router-link>
+            <router-link :to="{ name: 'Rates & Bundles'}">Rates & Bundles</router-link>
           </div>
           <div  v-on:click=ToggleSearch id="search" class="wideNavElement navElement navImageContainer">
-            <img class="navImage" src="./assets/Search.svg" alt="Nav Toggle">
+            <img class="navImage" src="./assets/Search.svg" alt="Search Icon">
             </div>
         </div>
+      </nav>   
+      <!-- Full nav -->
+      <nav v-if="fullNavActive">
+        <div id="fullNav">
+          <!-- Start full search bar -->
+          <div class="flex justify-center">
+            <div class="searchContainer rounded-full flex ">
+              <div  v-on:click=ToggleNav class="closeButton text-2xl font-bold">X</div>
+              <div class="interiorSearchContainer flex">
+                <img class="searchIcon px-1" src="./assets/Search.svg" alt="Search Icon">
+                <input type="search" name="searchBar" id="search" placeholder="Coming Soon" 
+                class="searchBar rounded-lg">
+              </div>
+            </div>
+          </div>
+          <!-- End full search bar -->
+          <div class="fullNavLinks flex">
+            <ul class="py-0.5 pr-2">
+              <li class="text-xl fullNavElement navElement navLinkContainer">
+                <router-link :to="{ name: 'Home'}">Home</router-link></li>
+              <li class="text-xl fullNavElement navElement navLinkContainer">
+                <router-link :to="{ name: 'Portfolio'}">Portfolio</router-link></li>
+              <li class="text-xl fullNavElement navElement navLinkContainer">
+                <router-link :to="{ name: 'Rates & Bundles'}">Rates & Bundles</router-link></li>
+              <li class="text-xl fullNavElement navElement navLinkContainer">
+                <router-link :to="{ name: 'Hosted Solutions'}">Hosted Solutions</router-link></li>
+            </ul>
+            <ul class="py-0.5 pl-2">
+              <li class="text-xl fullNavElement navElement navLinkContainer">
+                <router-link :to="{ name: 'Graphics & Design'}">Graphics & Design</router-link></li>
+              <li class="text-xl fullNavElement navElement navLinkContainer">
+                <router-link :to="{ name: 'Advertising'}">Advertising</router-link></li>
+              <li class="text-xl fullNavElement navElement navLinkContainer">
+                <router-link :to="{ name: 'Applications'}">Applications</router-link></li>
+              <li class="text-xl fullNavElement navElement navLinkContainer">
+                <router-link :to="{ name: 'Custom Software'}">Custom Software</router-link></li>
+            </ul>
+          </div>
+        </div>        
       </nav>
+      <!-- End full nav -->
+      <!-- Start full search bar -->
       <div v-if="searchActive" class="flex justify-center">
         <div class="searchContainer rounded-full flex ">
-          <div  v-on:click=ToggleSearch class="closeButton text-4xl font-bold">X</div>
+          <div  v-on:click=ToggleSearch class="closeButton text-2xl font-bold">X</div>
           <div class="interiorSearchContainer flex">
             <img class="searchIcon px-1" src="./assets/Search.svg" alt="Search Icon">
             <input type="search" name="searchBar" id="search" placeholder="Coming Soon" 
@@ -36,14 +80,12 @@
           </div>
         </div>
       </div>
+      <!-- End full search bar -->
+      <!-- Coloured bars -->
       <div class="goldBar h-2"></div>
       <div class="blackBar h-2"></div>
-      </div>
-    </div>    
-  <nav>
-    <div>
     </div>
-  </nav>
+  </div> 
 
   <!-- <div id="nav">
       <nav class="toggle" v-if="active" v-on:click="OpenNav">&#10006;</nav>
@@ -70,15 +112,16 @@
       </div>
   </div> -->
   <router-view></router-view>
+  <!-- footer -->
   <div id="footerContainer">
     <footer>
       <ul>
         <li class="text-3xl footerli">You may reach us at:</li>
         <li class="footerli">general@keetonet.ca</li>
         <li class="footerli">
-          <router-link to="/">Terms of Service</router-link></li>
+          <router-link :to="{ name: 'Terms of Service'}">Terms of Service</router-link></li>
         <li class="footerli">
-          <router-link to="/">Privacy policy</router-link></li>
+          <router-link :to="{ name: 'Privacy Policy'}">Privacy policy</router-link></li>
       </ul>
       <img id="copyright" class="footerli" src="./assets/c_keetonet_2021.png"
        alt="Copyright KEETONET 2021">
@@ -92,12 +135,16 @@
   export default {
     data () {
       return {
-        searchActive: false
+        searchActive: false,
+        fullNavActive: false
       }
     },
     methods: {
       ToggleSearch () {
         this.searchActive = !this.searchActive
+      },
+      ToggleNav () {
+        this.fullNavActive = !this.fullNavActive
       }
     }
   }
@@ -168,6 +215,10 @@ nav {
   padding: 0% 1%;
 }
 
+.navElement {
+  font-family: Abel; 
+}
+
 .wideNavElement {
   line-height: 1.2rem;
   display: flex;
@@ -175,6 +226,22 @@ nav {
   font-family: Abel; 
   max-width: 10rem; 
   min-width: 10rem;
+}
+
+.fullNavLinks {
+  min-width: 50%;
+}
+
+.fullNavLinks ul {
+}
+
+.fullNavLinks li {
+  padding: 0.5rem 0.2rem;
+  min-width: 10rem;
+}
+
+.fullNavElement {
+
 }
 
 .navLinkContainer {  
@@ -200,6 +267,7 @@ nav {
 .closeButton {
   width: 15%;
   color: #3A1FA5;
+  padding-top: 1.5%;
 }
 .searchContainer {
   background-color: #CCCCFF;
