@@ -24,7 +24,7 @@
           <div class="wideNavElement navElement navLinkContainer ">
             <router-link :to="{ name: 'Rates & Bundles'}">Rates & Bundles</router-link>
           </div>
-          <div  v-on:click=ToggleSearch id="search" class="wideNavElement navElement navImageContainer">
+          <div   v-on:click=ToggleSearch id="search" class="wideNavElement navElement navImageContainer">
             <img class="navImage" src="./assets/Search.svg" alt="Search Icon">
             </div>
         </div>
@@ -141,10 +141,17 @@
     },
     methods: {
       ToggleSearch () {
-        this.searchActive = !this.searchActive
+        if (this.fullNavActive) {
+          return
+        }
+        else {
+          this.searchActive = !this.searchActive
+        }
+        
       },
       ToggleNav () {
-        this.fullNavActive = !this.fullNavActive
+        this.fullNavActive = !this.fullNavActive;
+        this.searchActive = false;
       }
     }
   }
