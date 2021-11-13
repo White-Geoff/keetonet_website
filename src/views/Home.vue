@@ -20,10 +20,14 @@
       <div>
         <h4>Preferred Contact method:</h4>
         <div class="flex">
-          <input name="contactChoice"  type="radio" id="contactChoiceEmail" class="form-control" value="email"/>
-          <label for="contactChoice">Email</label><br>
-          <input name="contactChoice"  type="radio" id="contactChoicePhone" class="form-control" value="phone"/>
-          <label for="contactChoice">Phone</label><br>
+          <div class="text-center w-2/4">
+            <input name="contactChoice"  type="radio" id="contactChoiceEmail" class="form-control" value="email"/>
+            <label for="contactChoice">Email</label><br>
+          </div>
+          <div class="text-center w-2/4">
+            <input name="contactChoice"  type="radio" id="contactChoicePhone" class="form-control" value="phone"/>
+            <label for="contactChoice">Phone</label><br>
+            </div>
         </div>
       </div>
       <br/>
