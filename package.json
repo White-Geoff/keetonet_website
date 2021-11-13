@@ -10,9 +10,12 @@
   "dependencies": {
     "@aws-amplify/ui-components": "^1.9.2",
     "aws-amplify": "^4.3.4",
+    "axios": "^0.24.0",
     "core-js": "^3.6.5",
+    "emailjs-com": "^3.2.0",
     "register-service-worker": "^1.7.1",
     "vue": "^3.0.0",
+    "vue-axios": "^3.4.0",
     "vue-router": "^4.0.0-0"
   },
   "devDependencies": {
