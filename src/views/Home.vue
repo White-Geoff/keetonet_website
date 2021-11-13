@@ -121,8 +121,6 @@ export default {
 </script>
 
 <style>
-.aboutUs {
-}
 #contact-form {
   margin: 2rem auto;
   width: 90%;

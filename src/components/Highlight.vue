@@ -1,6 +1,6 @@
 <template>
-  <div class="highlightBanner text-center w-full">
-    <div class="w-full">
+  <div class="highlightBanner text-center flex justify-center w-full">
+    <div class="max-w-screen-lg">
       <h1 class="text-blue-600 text-3xl p-4">Check out our featured Items</h1>
       <h3 class="text-blue-600 text-3xl p-4">Order by Nov 24, 2021. Estimated Delivery by Dec 4, 2021</h3>
       <div class="highlightImgContainer"> 

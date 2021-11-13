@@ -15,7 +15,7 @@
       <!-- Initial wide nav -->
       <nav v-if="!fullNavActive">
         <div id="internalNav">
-          <div  v-on:click=ToggleNav id="navToggle" class="wideNavElement navElement navImageContainer">
+          <div  v-on:click=ToggleNav id="navToggle" class="cursor-pointer wideNavElement navElement navImageContainer">
           <img class="navImage" src="./assets/Menu_Toggle.svg" alt="Nav Toggle"></div>
           <div class="wideNavElement navElement navLinkContainer ">
             <router-link :to="{ name: 'Home'}">Home</router-link></div>
@@ -24,7 +24,7 @@
           <div class="wideNavElement navElement navLinkContainer ">
             <router-link :to="{ name: 'Rates & Bundles'}">Rates & Bundles</router-link>
           </div>
-          <div   v-on:click=ToggleSearch id="search" class="wideNavElement navElement navImageContainer">
+          <div   v-on:click=ToggleSearch id="search" class="cursor-pointer wideNavElement navElement navImageContainer">
             <img class="navImage" src="./assets/Search.svg" alt="Search Icon">
             </div>
         </div>
