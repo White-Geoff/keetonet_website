@@ -165,7 +165,7 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   background-color: #CCCCFF;
-   color: #FFFFFF;
+   color: #000;
 }
 
 
@@ -205,6 +205,7 @@
   color: #FFFFFF;
 }
 nav {
+   color: #FFFFFF;
   display: flex;
   align-items: center;
   justify-content: center;
