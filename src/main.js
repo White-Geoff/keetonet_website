@@ -4,6 +4,7 @@ import "./registerServiceWorker";
 import router from "./router";
 import "./index.css";
 
+
 import Amplify from 'aws-amplify';
 import aws_exports from './aws-exports';
 import {
@@ -17,3 +18,6 @@ applyPolyfills().then(() => {
 });
 
 createApp(App).use(router).mount("#app");
+
+
+
