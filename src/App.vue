@@ -86,31 +86,6 @@
       <div class="blackBar h-2"></div>
     </div>
   </div> 
-
-  <!-- <div id="nav">
-      <nav class="toggle" v-if="active" v-on:click="OpenNav">&#10006;</nav>
-      <nav id="toggleImage" class="toggle" v-if="!active" v-on:click="OpenNav"><img src="./assets/Menu_Toggle.svg" alt=""></nav>
-      <ul v-if="active">
-        <li class="navlink">
-          <router-link to="/">Home</router-link></li>
-        <li class="navlink">
-          <router-link to="/about">About</router-link></li>
-        <li class="navlink">
-          <router-link to="/portfolio">Our Portfolio</router-link></li>
-        <li class="navlink">
-          <router-link to="/rates_bundles">Rates & Bundles</router-link></li>
-      </ul>
-      <div id="wideNav">
-        <div class="navlink">
-          <router-link to="/">Home</router-link></div>
-        <div class="navlink">
-          <router-link to="/about">About</router-link></div>
-        <div class="navlink">
-          <router-link to="/portfolio">Portfolio</router-link></div>
-        <div class="navlink">
-          <router-link to="/rates_bundles">Rates & Bundles</router-link></div>
-      </div>
-  </div> -->
   <router-view></router-view>
   <!-- footer -->
   <div id="footerContainer">

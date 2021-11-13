@@ -32,7 +32,7 @@
         We will help you connect with local government digital grants.</p>
       </div>
   </div>
-  <form ref="form" id="contact-form" @submit.prevent=Submit @reset=Reset>
+  <form ref="form" id="contact-form" @submit.prevent=Submit>
     <div class="z-10">
       <h4>Name:</h4>
       <input  name="name" placeholder="Enter name here…" 
@@ -76,12 +76,17 @@
     <div>
         
       </div>
-      <div class="z-20 -mt-72 h-40 mb-72">
+      <div class="z-20 -mt-80 h-20 mb-80 pt-4">
         <h4>I accept the terms</h4>
         <input name="terms"  type="checkbox" id="acceptTerms" class="form-control"/>
       </div>
-      
+      <div v-if="submitComplete" class="text-center w-full">
+        <p>Thankyou for your message</p>
+        <button v-on:click=ResetOnSubmit  type="button"
+        class="btn btn-lg">Acknowledge</button>
+      </div>
 </form>
+
 </template>
 
 
@@ -94,7 +99,7 @@ export default {
   components: { Highlight, },
   data () {
       return {
-        name: "",
+        submitComplete: false,
       }
     },
   methods: {
@@ -106,10 +111,20 @@ export default {
        this.contactChoice = ""
        this.terms = ""
      },
+     ResetOnSubmit(){
+       this.name = "",
+       this.phone = "",
+       this.email = "",
+       this.message = "",
+       this.contactChoice = ""
+       this.terms = ""
+       this.submitComplete = false
+     },
     Submit() {
       emailjs.sendForm('service_67bbruu', 'template_6rji6sj', this.$refs.form, 'user_gdwqVVzFx51tCkVirTCP6')
         .then((result) => {
             console.log('SUCCESS!', result.text);
+            this.submitComplete = true;
         }, (error) => {
             console.log('FAILED...', error.text);
         });
