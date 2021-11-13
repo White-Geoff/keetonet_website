@@ -1,4 +1,37 @@
 <template>
+  <Highlight />
+  <div class="aboutUs text-center  w-full p-8">
+    <div class="max-w-screen-sm m-auto">
+      <p>KEETONET Inc. is a software development company based in Huron County, Ontario. 
+        We offer a full range of digital services and solutions as a one stop shop.</p>
+      <br>
+      <p class="font-bold">Our design offerings include the following:</p>
+      <ul>
+        <li>Brand Design</li>
+        <li>Graphic Design</li>
+        <li>Illustration</li>
+        <li>Logo Design</li>
+        <li>Web Design</li>
+        <li>3D Design</li>
+        <li>And more...</li>
+      </ul>
+      <br>
+      <p class="font-bold">Our Digital offerings include the following:</p>
+      <ul>
+        <li>IT Consulting</li>
+        <li>Custom Hosted Solutions</li>
+        <li>Website Development</li>
+        <li>Application Development</li>
+        <li>Software Development</li>
+        <li>Cyber Security Consulting</li>
+        <li>And more...</li>
+      </ul>
+      <br>
+      <p>We are happy to offer a free consultation. 
+        Our first meeting is to discover your needs, your timeline, and your budget. 
+        We will help you connect with local government digital grants.</p>
+      </div>
+  </div>
   <form ref="form" id="contact-form" @submit.prevent=Submit @reset=Reset>
     <div class="z-10">
       <h4>Name:</h4>
@@ -27,7 +60,11 @@
           <div class="text-center w-2/4">
             <input name="contactChoice"  type="radio" id="contactChoicePhone" class="form-control" value="phone"/>
             <label for="contactChoice">Phone</label><br>
-            </div>
+          </div>
+          <div class="text-center w-2/4">
+            <input name="contactChoice"  type="radio" id="contactChoicePhone" class="form-control" value="text"/>
+            <label for="contactChoice">Text</label><br>
+          </div>
         </div>
       </div>
       <br/>
@@ -47,11 +84,14 @@
 </form>
 </template>
 
+
 <script>
 import emailjs from 'emailjs-com';
+import Highlight from '../components/Highlight.vue';
 
 export default {
-  name: "ContactForm",
+  name: "Home",
+  components: { Highlight, },
   data () {
       return {
         name: "",
@@ -81,8 +121,10 @@ export default {
 </script>
 
 <style>
+.aboutUs {
+}
 #contact-form {
-  margin: auto;
+  margin: 2rem auto;
   width: 90%;
   max-width: 500px;
   padding: 1rem 0%;

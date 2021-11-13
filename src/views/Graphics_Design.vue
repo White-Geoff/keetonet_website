@@ -1,20 +1,15 @@
 <template>
-  <div class="home body h-screen align-bottom block">
-    <div class="h-2/4"></div>
-    <h1 class="h-8 font-bold block">Content goes here</h1>
-  </div>
+<Highlight/>
 </template>
 
-// <script>
+<script>
 // // @ is an alias to /src
-// import HelloWorld from "@/components/HelloWorld.vue";
+// import Highlight from "@/components/Highlight.vue";
 
-// export default {
-//   name: "Home",
-//   components: {
-//     HelloWorld,
-//   },
-// };
-// </script>
-
-//<style scoped src="../index.css"></style>
+ // export default {
+   // name: "Graphics_Design",
+   // components: {
+     // Highlight,
+   // },
+ // };
+ </script>
