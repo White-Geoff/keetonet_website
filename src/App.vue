@@ -86,11 +86,13 @@
   <!-- footer -->
   <div id="footerContainer">
     <footer>
+      <div>
+        <a href="https://www.facebook.com/keetonet.inc" target="_blank">
+        <img class="p-2 m-auto" src="./assets/icons8-facebook-48.png" alt="Facebook"></a>
+      </div>
       <ul>
         <li class="text-3xl footerli">You may reach us at:</li>
-        <li class="footerli">general@keetonet.ca</li>
-        <a href="https://www.facebook.com/keetonet.inc" target="_blank">
-        <img class="m-auto" src="./assets/icons8-facebook-48.png" alt="Facebook"></a>
+        <li class="footerli">general@keetonet.ca</li>        
         <li class="footerli">
           <router-link :to="{ name: 'Terms of Service'}">Terms of Service</router-link></li>
         <li class="footerli">
