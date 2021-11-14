@@ -52,18 +52,14 @@
                 <router-link :to="{ name: 'Portfolio'}">Portfolio</router-link></li>
               <li class="text-xl fullNavElement navElement navLinkContainer">
                 <router-link :to="{ name: 'Rates & Bundles'}">Rates & Bundles</router-link></li>
-              <li class="text-xl fullNavElement navElement navLinkContainer">
-                <router-link :to="{ name: 'Hosted Solutions'}">Hosted Solutions</router-link></li>
             </ul>
             <ul class="py-0.5 pl-2">
               <li class="text-xl fullNavElement navElement navLinkContainer">
                 <router-link :to="{ name: 'Graphics & Design'}">Graphics & Design</router-link></li>
               <li class="text-xl fullNavElement navElement navLinkContainer">
+                <router-link :to="{ name: 'Digital Solutions'}">Digital Solutions</router-link></li>
+              <li class="text-xl fullNavElement navElement navLinkContainer">
                 <router-link :to="{ name: 'Advertising'}">Advertising</router-link></li>
-              <li class="text-xl fullNavElement navElement navLinkContainer">
-                <router-link :to="{ name: 'Applications'}">Applications</router-link></li>
-              <li class="text-xl fullNavElement navElement navLinkContainer">
-                <router-link :to="{ name: 'Custom Software'}">Custom Software</router-link></li>
             </ul>
           </div>
         </div>        
@@ -86,31 +82,6 @@
       <div class="blackBar h-2"></div>
     </div>
   </div> 
-
-  <!-- <div id="nav">
-      <nav class="toggle" v-if="active" v-on:click="OpenNav">&#10006;</nav>
-      <nav id="toggleImage" class="toggle" v-if="!active" v-on:click="OpenNav"><img src="./assets/Menu_Toggle.svg" alt=""></nav>
-      <ul v-if="active">
-        <li class="navlink">
-          <router-link to="/">Home</router-link></li>
-        <li class="navlink">
-          <router-link to="/about">About</router-link></li>
-        <li class="navlink">
-          <router-link to="/portfolio">Our Portfolio</router-link></li>
-        <li class="navlink">
-          <router-link to="/rates_bundles">Rates & Bundles</router-link></li>
-      </ul>
-      <div id="wideNav">
-        <div class="navlink">
-          <router-link to="/">Home</router-link></div>
-        <div class="navlink">
-          <router-link to="/about">About</router-link></div>
-        <div class="navlink">
-          <router-link to="/portfolio">Portfolio</router-link></div>
-        <div class="navlink">
-          <router-link to="/rates_bundles">Rates & Bundles</router-link></div>
-      </div>
-  </div> -->
   <router-view></router-view>
   <!-- footer -->
   <div id="footerContainer">
@@ -118,6 +89,8 @@
       <ul>
         <li class="text-3xl footerli">You may reach us at:</li>
         <li class="footerli">general@keetonet.ca</li>
+        <a href="https://www.facebook.com/keetonet.inc" target="_blank">
+        <img class="m-auto" src="./assets/icons8-facebook-48.png" alt="Facebook"></a>
         <li class="footerli">
           <router-link :to="{ name: 'Terms of Service'}">Terms of Service</router-link></li>
         <li class="footerli">
@@ -246,10 +219,6 @@ nav {
 .fullNavLinks li {
   padding: 0.5rem 0.2rem;
   min-width: 10rem;
-}
-
-.fullNavElement {
-
 }
 
 .navLinkContainer {  
