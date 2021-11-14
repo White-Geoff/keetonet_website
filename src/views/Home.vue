@@ -1,6 +1,6 @@
 <template>
-  <div class="aboutUs text-center  w-full p-8">
-    <div class="max-w-screen-sm m-auto">
+  <div class="aboutUs text-center  w-full px-8 pt-8">
+    <div class="max-w-screen-sm mx-auto">
       <p>KEETONET Inc. is a software development company based in Huron County, Ontario. 
         We offer a full range of digital services and solutions as a one stop shop.</p>
       <br>

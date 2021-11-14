@@ -17,8 +17,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .headlineContainer {
-  margin: 0.5rem auto 0.5rem 5%;
-  width: 90%;
+  margin: 1rem auto 1rem 2.5%;
+  width: 95%;
   text-align: left;  
   position: relative;
 }

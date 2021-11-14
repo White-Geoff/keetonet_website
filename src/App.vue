@@ -52,18 +52,14 @@
                 <router-link :to="{ name: 'Portfolio'}">Portfolio</router-link></li>
               <li class="text-xl fullNavElement navElement navLinkContainer">
                 <router-link :to="{ name: 'Rates & Bundles'}">Rates & Bundles</router-link></li>
-              <li class="text-xl fullNavElement navElement navLinkContainer">
-                <router-link :to="{ name: 'Hosted Solutions'}">Hosted Solutions</router-link></li>
             </ul>
             <ul class="py-0.5 pl-2">
               <li class="text-xl fullNavElement navElement navLinkContainer">
                 <router-link :to="{ name: 'Graphics & Design'}">Graphics & Design</router-link></li>
               <li class="text-xl fullNavElement navElement navLinkContainer">
+                <router-link :to="{ name: 'Digital Solutions'}">Digital Solutions</router-link></li>
+              <li class="text-xl fullNavElement navElement navLinkContainer">
                 <router-link :to="{ name: 'Advertising'}">Advertising</router-link></li>
-              <li class="text-xl fullNavElement navElement navLinkContainer">
-                <router-link :to="{ name: 'Applications'}">Applications</router-link></li>
-              <li class="text-xl fullNavElement navElement navLinkContainer">
-                <router-link :to="{ name: 'Custom Software'}">Custom Software</router-link></li>
             </ul>
           </div>
         </div>        
@@ -93,6 +89,8 @@
       <ul>
         <li class="text-3xl footerli">You may reach us at:</li>
         <li class="footerli">general@keetonet.ca</li>
+        <a href="https://www.facebook.com/keetonet.inc" target="_blank">
+        <img class="m-auto" src="./assets/icons8-facebook-48.png" alt="Facebook"></a>
         <li class="footerli">
           <router-link :to="{ name: 'Terms of Service'}">Terms of Service</router-link></li>
         <li class="footerli">

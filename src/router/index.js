@@ -34,12 +34,6 @@ const routes = [
   },
    //Rest of nav links
    {
-    path: "/hosted_solutions",
-    name: "Hosted Solutions",
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Hosted_Solutions.vue"),
-  },
-   {
     path: "/graphics_design",
     name: "Graphics & Design",
     component: () =>
@@ -52,16 +46,10 @@ const routes = [
       import(/* webpackChunkName: "about" */ "../views/Advertising.vue"),
   },
     {
-    path: "/applications",
-    name: "Applications",
+    path: "/digital_solutions",
+    name: "Digital Solutions",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Applications.vue"),
-  },
-    {
-    path: "/custom_software",
-    name: "Custom Software",
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Custom_Software.vue"),
+      import(/* webpackChunkName: "about" */ "../views/Digital_Solutions.vue"),
   },
   {
     path: "/contact",
