@@ -53,4 +53,20 @@ export default {
     font-size: 1.5rem;
   }
 }
+@media screen and (min-width: 1500px) {
+  #headerText {
+    font-size: 1.5rem;
+  }
+  #headerImg {    
+  margin-top: 0.2%;
+  }
+}
+@media screen and (min-width: 3000px) {
+  #headerText {
+    font-size: 1.5rem;
+  }
+  #headerImg {    
+  margin-top: 0.1%;
+  }
+}
 </style>
