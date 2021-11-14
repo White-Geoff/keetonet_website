@@ -63,6 +63,12 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/Custom_Software.vue"),
   },
+  {
+    path: "/contact",
+    name: "Contact",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/Contact.vue"),
+  },
 ];
 
 const router = createRouter({

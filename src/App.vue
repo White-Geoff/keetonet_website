@@ -223,10 +223,6 @@ nav {
   min-width: 10rem;
 }
 
-.fullNavElement {
-
-}
-
 .navLinkContainer {  
   text-overflow: wrap;
 }
