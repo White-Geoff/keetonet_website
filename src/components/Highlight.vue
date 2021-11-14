@@ -32,6 +32,8 @@
           <figcaption>CardDe21A06</figcaption> 
       </figure>
     </div>
+    <h1 class="p-2 font-bold underline"><router-link class="underline"  :to="{ name: 'Contact'}">
+      I want to order!</router-link></h1>
   </div>
 </template>
 <script>
