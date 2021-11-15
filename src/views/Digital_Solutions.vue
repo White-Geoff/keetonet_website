@@ -1,5 +1,6 @@
 <template>
   <div class="bodyContainer text-center">
+    <h1 class="text-3xl py-3">What we offer:</h1>
     <div class="digitalContainer webContainer">
       <h1>Web Development</h1>
     </div>
