@@ -65,8 +65,7 @@
         <h1 class="text-8xl">Talk to us.</h1>
         <p>You can contact us through 
             <router-link class="underline"  :to="{ name: 'Contact'}">
-            this form</router-link>
-          this form, or send us and email at:</p>
+            this form,</router-link> or send us and email at:</p>
         <br>
         <p>general@keetonet.ca</p>
       </div>
