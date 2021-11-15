@@ -1,20 +1,23 @@
 <template>
-  <div class="home body h-screen align-bottom block">
-    <div class="h-2/4"></div>
-    <h1 class="h-8 font-bold block">Content coming soon</h1>
+  <div class="bodyContainer text-center">
+    <div class="digitalContainer webContainer">
+      <h1>Web Development</h1>
+    </div>
+    <div class="digitalContainer appsContainer">
+      <h1>App Development</h1>
+    </div>
+    <div class="digitalContainer softwarecontainer">
+      <h1>Custom Software Development</h1>
+    </div>
+    <div class="digitalContainer hostedContainer">Custom Hosted Solutions</div>
   </div>
 </template>
 
-// <script>
-// // @ is an alias to /src
-// import HelloWorld from "@/components/HelloWorld.vue";
+ <script>
+ </script>
 
-// export default {
-//   name: "Home",
-//   components: {
-//     HelloWorld,
-//   },
-// };
-// </script>
-
-//<style scoped src="../index.css"></style>
+<style>
+.digitalContainer  {
+  height: 100px;
+}
+</style>
