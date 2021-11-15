@@ -11,51 +11,51 @@ const routes = [
     path: "/portfolio",
     name: "Portfolio",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Portfolio.vue"),
+      import(/* webpackChunkName: "portfolio" */ "../views/Portfolio.vue"),
   },
    {
     path: "/rates_bundles",
     name: "Rates & Bundles",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Rates_Bundles.vue"),
+      import(/* webpackChunkName: "rates & bundles" */ "../views/Rates_Bundles.vue"),
   },
     // Footer
    {
     path: "/terms_conditions",
     name: "Terms of Service",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Terms_Conditions.vue"),
+      import(/* webpackChunkName: "Terms and Conditions" */ "../views/Terms_Conditions.vue"),
   },
    {
     path: "/privacy_policy",
      name: "Privacy Policy",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Privacy_Policy.vue"),
+      import(/* webpackChunkName: "Privacy Policy" */ "../views/Privacy_Policy.vue"),
   },
    //Rest of nav links
    {
     path: "/graphics_design",
     name: "Graphics & Design",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Graphics_Design.vue"),
+      import(/* webpackChunkName: "Graphics & design" */ "../views/Graphics_Design.vue"),
   },
     {
     path: "/partners",
     name: "Partners",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Partners.vue"),
+      import(/* webpackChunkName: "Partners" */ "../views/Partners.vue"),
   },
     {
     path: "/digital_solutions",
     name: "Digital Solutions",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Digital_Solutions.vue"),
+      import(/* webpackChunkName: "Digital solutions" */ "../views/Digital_Solutions.vue"),
   },
   {
     path: "/contact",
     name: "Contact",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Contact.vue"),
+      import(/* webpackChunkName: "Contact" */ "../views/Contact.vue"),
   },
 ];
 
