@@ -2,7 +2,10 @@
   <div class="bodyContainer blueBackground50 rounded-3xl text-center">
       <div class="p-2 my-2 flex">
         <div class="w-6/12 m-auto">
-          <h1 class="font-bold text-2xl">Digital Needs</h1>
+          <h1 class="font-bold text-2xl">
+            <router-link class="underline"  :to="{ name: 'Digital Solutions'}">
+           Digital Needs</router-link>
+          </h1>
           <ul>
             <li>IT Consulting</li>
             <li>Custom Hosted Solutions</li>
@@ -14,7 +17,10 @@
           </ul>
         </div>
         <div class="w-6/12">
-          <h1 class="font-bold text-2xl">Design Needs</h1>
+          <h1 class="font-bold text-2xl">
+            <router-link class="underline"  :to="{ name: 'Graphics & Design'}">
+           Design Needs</router-link>
+            </h1>
           <ul>
             <li>Brand Design</li>
             <li>Graphic Design</li>
