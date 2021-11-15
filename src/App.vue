@@ -59,7 +59,7 @@
               <li class="text-xl fullNavElement navElement navLinkContainer">
                 <router-link :to="{ name: 'Digital Solutions'}">Digital Solutions</router-link></li>
               <li class="text-xl fullNavElement navElement navLinkContainer">
-                <router-link :to="{ name: 'Advertising'}">Advertising</router-link></li>
+                <router-link :to="{ name: 'Partners'}">Partners</router-link></li>
             </ul>
           </div>
         </div>        

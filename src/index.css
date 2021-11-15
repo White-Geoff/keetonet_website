@@ -16,3 +16,49 @@
   min-width: 250px;
   max-width: 1000px;
 }
+/* Graphics page */
+.graphicsContainer h1 {
+  text-align: left;
+  color: #fff;
+  font-size: 2rem;
+}
+.graphicsContainer {
+  background: rgba(44, 130, 130, 0.25);
+  width: 95%;
+  margin: 0.1rem auto 0.1rem 2.5%;
+  max-width: 1000px;
+  width: 90%;
+  justify-content: center;
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 20px;
+}
+.carousel {
+  height: 100%;
+  overflow-y: hidden;
+}
+.graphicsInnerContainer {
+  background: #2c8282;
+  padding: 0.5rem 0.5rem;
+  margin: 0.5rem 0.5rem;
+  height: 200px;
+}
+.graphicsInnerContainer figcaption {
+  padding: 0.75rem 0.5rem;
+}
+.graphicsInnerContainer img {
+  min-width: 150px;
+  height: 150px;
+  padding: 0.75rem;
+  background: #fff;
+}
+
+@media screen and (min-width: 1000px) {
+  .graphicsInnerContainer img {
+    min-width: 300px;
+    height: 300px;
+  }
+  .graphicsInnerContainer {
+    height: 400px;
+  }
+}
