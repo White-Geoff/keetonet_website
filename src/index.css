@@ -6,3 +6,13 @@
   width: 95%;
   margin: 2rem auto 2rem 2.5%;
 }
+.blueBackground50 {
+  background: rgba(44, 130, 130, 0.25);
+}
+.bundleContainer {
+  width: 46%;
+  margin: auto;
+  padding: 2rem 2%;
+  min-width: 250px;
+  max-width: 1000px;
+}
