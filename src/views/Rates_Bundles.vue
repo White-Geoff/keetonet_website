@@ -64,8 +64,7 @@
         <h1 class="text-4xl">Bigger Project? Need something else?</h1>
         <h1 class="text-8xl">Talk to us.</h1>
         <p>You can contact us through 
-            <router-link class="underline"  :to="{ name: 'Contact'}">this form,
-            </router-link> or send us and email at:</p>
+            <router-link class="underline"  :to="{ name: 'Contact'}">this form</router-link>, or send us and email at:</p>
         <br>
         <p>general@keetonet.ca</p>
       </div>
