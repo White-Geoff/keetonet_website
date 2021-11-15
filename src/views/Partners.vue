@@ -4,7 +4,7 @@
     <a class="underline" href="https://pingperfect.com/aff.php?aff=1248">Looking for a game server?</a>
     <br>
     <br>
-    <h1 class="h-8 font-bold block">Stay tuned for new parnerships and solutions</h1>
+    <h1 class="h-8 font-bold block">Stay tuned for new partnerships and solutions</h1>
   </div>
 </template>
 
