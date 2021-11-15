@@ -2,7 +2,7 @@
   <div class="bodyContainer blueBackground50 rounded-3xl text-center">
       <div class="p-2 my-2 flex">
         <div class="w-6/12 m-auto">
-          <h1 class="font-bold text-1.xl">Digital Needs</h1>
+          <h1 class="font-bold text-2xl">Digital Needs</h1>
           <ul>
             <li>IT Consulting</li>
             <li>Custom Hosted Solutions</li>
@@ -14,7 +14,7 @@
           </ul>
         </div>
         <div class="w-6/12">
-          <h1 class="font-bold text-1.5xl">Design Needs</h1>
+          <h1 class="font-bold text-2xl">Design Needs</h1>
           <ul>
             <li>Brand Design</li>
             <li>Graphic Design</li>
@@ -54,7 +54,7 @@
           </div>
         </div>
       </div>
-      <div class="w-11/12">
+      <div class="w-11/12 m-auto">
         <h1 class="text-4xl">Bigger Project? Need something else?</h1>
         <h1 class="text-8xl">Talk to us.</h1>
         <p>You can contact us through 
