@@ -1,10 +1,8 @@
 <template>
   <div class="highlightContainer w-full p-0">
-    <Headline 
-      :headlineMsg = headlineMsg>
-      </Headline>
+    <Headline  :headlineMsg = highlightMsg></Headline>
     <div class="highlightImgContainer text-center flex w-11/12 flex-wrap flex-row m-auto">
-      <h1 class="w-full m-1">Order by Nov 24, 2021. Estimated delivery Dec 3-8, 2021</h1>
+      <h1 class="w-full m-1">Order by Nov 24, 2021. Estimated in stock by Dec 3-8, 2021</h1>
       <h3 class="w-full m-1">Free pickup, Delivery available.</h3>
       <h6 class="w-full m-1">Find in local stores</h6>
       <figure class="highlightFigure">
@@ -44,7 +42,7 @@ export default {
   components: { Headline },
   data () {
     return {
-      headlineMsg: "Check out our featured items!"
+      highlightMsg: "Check out our featured items!"
     }
   }
 };
