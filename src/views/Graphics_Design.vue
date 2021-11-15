@@ -136,7 +136,7 @@
  </script>
 
  <style>
- h1 {
+ .graphicsContainer h1 {
    text-align: left;
    color: #FFF;
    font-size: 2rem;
