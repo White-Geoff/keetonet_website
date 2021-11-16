@@ -44,7 +44,7 @@
             <h1 class=" text-white">Restaurant Starter Bundle</h1>
             <h6 class="font-bold">Bundle starts under $1,000</h6>
             <p class="p-2">Includes:</p>
-            <ul>
+            <ul class="list-disc text-left m-auto w-6/12">
               <li>Consultation</li>
               <li>.ca domain</li>
               <li>Specialized website with easy to update format</li>
@@ -53,6 +53,7 @@
               <li>Social media setup</li>
               <li>And more...</li>
             </ul>
+            <br>
             <p>Starts at 10 hours of Design & Development</p>
           </div>
           <div class="bundleContainer">
@@ -64,7 +65,7 @@
         <h1 class="text-4xl">Bigger Project? Need something else?</h1>
         <h1 class="text-8xl">Talk to us.</h1>
         <p>You can contact us through 
-            <router-link class="underline"  :to="{ name: 'Contact'}">this form</router-link>, or send us and email at:</p>
+            <router-link class="underline"  :to="{ name: 'Contact'}">this form</router-link>, or send us an email at:</p>
         <br>
         <p>general@keetonet.ca</p>
       </div>
