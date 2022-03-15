@@ -1,6 +1,6 @@
 <template>
   <form ref="form" id="contact-form" @submit.prevent=Submit>
-    <div class="z-10">
+    <div class="relative z-10">
       <h4>Name:</h4>
       <input  name="name" placeholder="Enter name here…" 
       class="form-control"  id="name-input"/>
